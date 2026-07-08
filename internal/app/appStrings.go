@@ -27,6 +27,7 @@ func buildRenderHelpText(style styleVariables) string {
 		"",
 		sectionStyle.Render("* File Picker"),
 		helpBinding("j/k or up/down", "Navigate options", keyStyle, descriptionStyle),
+		helpBinding("<letter>", "Jump to file starting with that letter", keyStyle, descriptionStyle),
 		helpBinding("pgdown", "Go To Bottom", keyStyle, descriptionStyle),
 		helpBinding("pgup", "Go To Top", keyStyle, descriptionStyle),
 		helpBinding("enter/right", "Open directory or select image", keyStyle, descriptionStyle),

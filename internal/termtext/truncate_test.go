@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/joaoheitorgarcia/Mezzotone/internal/termtext"
+	"github.com/mamorett/qMezzotone/internal/termtext"
 
 	"charm.land/lipgloss/v2"
 	"github.com/charmbracelet/x/ansi"
