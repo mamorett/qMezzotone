@@ -160,12 +160,12 @@ func NewQMezzotoneModel() *QMezzotoneModel {
 
 func NewQMezzotoneModelWithConfig(config QMezzotoneModelConfig) *QMezzotoneModel {
 	modelStyleColors := styleColors{
-		white:    lipgloss.Color("255"),
-		primary:  lipgloss.Color("99"),
-		selected: lipgloss.Color("213"),
-		gray:     lipgloss.Color("247"),
-		black:    lipgloss.Color("232"),
-		error:    lipgloss.Color("9"),
+		white:    lipgloss.Color("#ECEFF4"), // Nord6 (Snow Storm Brightest)
+		primary:  lipgloss.Color("#81A1C1"), // Nord9 (Frost Medium Ice Blue Accent)
+		selected: lipgloss.Color("#88C0D0"), // Nord8 (Frost Ice Blue Selection)
+		gray:     lipgloss.Color("#4C566A"), // Nord3 (Polar Night Inactive/Gray)
+		black:    lipgloss.Color("#2E3440"), // Nord0 (Polar Night Dark Background)
+		error:    lipgloss.Color("#BF616A"), // Nord11 (Aurora Red Error)
 	}
 
 	renderViewStyle := lipgloss.NewStyle().
