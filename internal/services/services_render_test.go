@@ -8,7 +8,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/joaoheitorgarcia/Mezzotone/internal/services"
+	"github.com/mamorett/qMezzotone/internal/services"
 
 	"charm.land/lipgloss/v2"
 	"github.com/charmbracelet/colorprofile"

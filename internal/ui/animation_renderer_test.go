@@ -4,7 +4,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/joaoheitorgarcia/Mezzotone/internal/ui"
+	"github.com/mamorett/qMezzotone/internal/ui"
 
 	tea "charm.land/bubbletea/v2"
 )

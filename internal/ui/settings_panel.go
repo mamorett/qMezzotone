@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/joaoheitorgarcia/Mezzotone/internal/termtext"
+	"github.com/mamorett/qMezzotone/internal/termtext"
 
 	"charm.land/bubbles/v2/textinput"
 	tea "charm.land/bubbletea/v2"

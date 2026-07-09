@@ -3,7 +3,7 @@ package ui_test
 import (
 	"testing"
 
-	"github.com/joaoheitorgarcia/Mezzotone/internal/ui"
+	"github.com/mamorett/qMezzotone/internal/ui"
 
 	tea "charm.land/bubbletea/v2"
 	"charm.land/lipgloss/v2"

@@ -1,10 +1,10 @@
-[![Version](https://img.shields.io/badge/Version-v1.1.1-blue.svg)](https://github.com/JoaoHeitorGarcia/Mezzotone/releases)
+[![Version](https://img.shields.io/badge/Version-v1.1.1-blue.svg)](https://github.com/mamorett/qMezzotone/releases)
 [![Powered by Bubble Tea](https://img.shields.io/badge/Powered_by-Bubble_Tea-7a4a8f)](https://github.com/charmbracelet/bubbletea)
 [![Powered by Go](https://img.shields.io/badge/Powered_by-Go-7a4a8f)](https://github.com/golang/go)
 
-# Mezzotone
+# qMezzotone
 
-Mezzotone is a terminal UI (TUI) app written in Go that converts images and GIFs into ASCII/Unicode art.
+qMezzotone is a terminal UI (TUI) app written in Go that converts images and GIFs into ASCII/Unicode art.
 
 <img width="1865" height="1002" alt="image" src="https://github.com/user-attachments/assets/731ab90b-afbe-4bee-a0fb-36875029db84" />
 
@@ -29,8 +29,8 @@ Requirements:
 - Go `1.25.6` or newer
 
 ```bash
-git clone https://github.com/JoaoHeitorGarcia/Mezzotone.git
-cd Mezzotone
+git clone https://github.com/mamorett/qMezzotone.git
+cd qMezzotone
 go run .
 ```
 
@@ -41,7 +41,7 @@ Prebuilt binaries are available in the [`build`](./build) directory in this repo
 ## CLI usage
 
 ```bash
-mezzotone [flags]
+qmezzotone [flags]
 ```
 
 Flags:
@@ -66,7 +66,7 @@ go run . -debug -font-ttf /path/to/font.ttf
    - `i` export to `.png`
    - `g` export to `.gif`
 
-Exported files are written to your home directory with names like `Mezzotone_<uuid>.png`.
+Exported files are written to your home directory with names like `QMezzotone_<uuid>.png`.
 
 ## Key controls
 
@@ -99,7 +99,7 @@ Render view:
 
 ## Clipboard notes
 
-Mezzotone uses `golang.design/x/clipboard` and falls back to system tools when available.
+qMezzotone uses `golang.design/x/clipboard` and falls back to system tools when available.
 
 On Linux, install one of:
 
@@ -109,13 +109,29 @@ On Linux, install one of:
 
 ## Build binaries
 
-Use the build script:
+Use the Makefile:
 
 ```bash
-bash tools/build.sh
+make          # build all platforms into build/
+make clean    # remove build/
+make test     # run tests
 ```
 
-Generated binaries are written to `build/` for Linux, macOS, and Windows targets.
+To build a single platform:
+
+```bash
+make linux/amd64
+```
+
+Override variables as needed:
+
+```bash
+APP_NAME=myapp MAIN_PKG=./cmd/myapp make build
+```
+
+> The legacy `tools/build.sh` is kept for reference but `make` is the canonical build.
+
+> Binaries are built with `CGO_ENABLED=0`, so the C library is optional.
 
 ## Notes
 
@@ -138,6 +154,6 @@ Original:
 
 Output:
 
-![Mezzotone_b594ace5-b402-4d52-8786-d909c741bcb9](https://github.com/user-attachments/assets/11ee0c34-0724-4e2a-be84-a7fa48c68a9e)
-![Mezzotone_8c87d3ae-26d1-46cd-bb07-1f164428aacb](https://github.com/user-attachments/assets/2896d241-b292-4308-8e85-1eed11361976)
+![qMezzotone_b594ace5-b402-4d52-8786-d909c741bcb9](https://github.com/user-attachments/assets/11ee0c34-0724-4e2a-be84-a7fa48c68a9e)
+![qMezzotone_8c87d3ae-26d1-46cd-bb07-1f164428aacb](https://github.com/user-attachments/assets/2896d241-b292-4308-8e85-1eed11361976)
 

@@ -1,4 +1,4 @@
-module github.com/joaoheitorgarcia/Mezzotone
+module github.com/mamorett/qMezzotone
 
 go 1.25
 
